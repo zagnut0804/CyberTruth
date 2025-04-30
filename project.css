@@ -130,6 +130,80 @@ video {display: block;
        margin-top: 1em;
        margin-bottom: 1em; }
 summary { margin-bottom: 1em; }
+.row { padding-bottom: 13em; }
+.row > .column { padding: 0 8px; }
+#row:after { content: "";
+             display: table;
+             clear: both; }
+/* Creates four equal columns for macbook.html*/
+.column { float: left;
+          width: 25%; }
+.column img { width: 70%; }
+/* The Modal (background) */
+.modal { display: none;
+         position: fixed;
+         z-index: 1;
+         padding-top: 100px;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         overflow: auto;
+         background-color: #404040; }
+/* Modal Content for macbook.html */
+.modal-content { position: relative;
+                 background-color: #fefefe;
+                 margin: auto;
+                 padding: 0;
+                 width: 90%;
+                 max-width: 1200px; }
+/* Modal close button for macbook.html */
+.close { color: white;
+         position: absolute;
+         top: 10px;
+         right: 25px;
+         font-size: 35px;
+         font-weight: bold; }
+.close:hover, .close:focus { color: #CC9933;
+                             text-decoration: none;
+                             cursor: pointer; }
+/* Hide the slides by default in the modal */
+.mySlides { display: none; }
+.mySlides img { width: 100%; }
+/* Next and previous buttons */
+.prev, .next { cursor: pointer;
+               position: absolute;
+               top: 50%;
+               width: auto;
+               padding: 16px;
+               margin-top: -50px;
+               color: white;
+               font-weight: bold;
+               font-size: 20px;
+               transition: 0.6s ease;
+               border-radius: 0 3px 3px 0;
+               user-select: none;
+               -webkit-user-select: none; }
+/* Positions the "next button" in the modal on macbook.html */
+.next { right: 0;
+        border-radius: 3px 0 0 3px; }
+/* On hover, add a black background color with a little bit see-through to the modal on macbook.html */
+.prev:hover, .next:hover { background-color: #404040; }
+/* Number text (1/3 etc) */
+.numbertext { color: #E3E3E5;
+              font-size: 12px;
+              padding: 8px 12px;
+              position: absolute;
+              top: 0; }
+/* Caption text for modal on macbook.html */
+.caption-container { text-align: center;
+                     background-color: #ffffff;
+                     padding: 2px 16px;
+                     color: #000000; }
+img.demo { opacity: 0.6; }
+.active, .demo:hover { opacity: 1; }
+img.hover-shadow { transition: 0.3s; }
+.hover-shadow:hover { box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030; }
 @media (min-width: 600px) {
   #wrapper { padding: 0em; }
   header { padding-left: 0;

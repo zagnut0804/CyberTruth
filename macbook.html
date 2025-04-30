@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CyberTruth Macbook Air Review</title>
+<meta name="description" content="Check out our review of the new Apple Macbook Air laptop! Our experts discuss the latest features and hardware specifications and compare the different models.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="project.css">
+</head>
+<body>
+<div id="wrapper">
+<header>
+<!-- The source location of the image is: https://pixabay.com/illustrations/bullet-round-ball-binary-ball-hand-457334/. The globe logo was then cut form the source image.  -->
+<img src="images/Subject.png" height="120" width="120" alt="Globe with 1s and 0s wrapped around" align="left">
+<br>
+ <h1><a href="index.html">CyberTruth</a></h1>
+</header>
+<nav>
+ <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="news.html">News</a>
+     <ul>
+      <li><a href="vulnerabilities.html">Vulnerabilities</a></li> 
+      <li><a href="attacks.html">Attacks</a></li>
+    </ul>
+  </li>
+  <li><a href="tips.html">Tips</a>
+     <ul>
+      <li><a href="WindowsTips.html">Windows</a></li> 
+      <li><a href="LinuxTips.html">Mac / Linux</a></li>
+      <li><a href="MobileTips.html">Mobile</a></li>
+    </ul>
+  </li>
+  <li><a href="reviews.html">Reviews</a></li>
+  <li><a href="products.html">Products</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+ </ul>
+</nav>
+<main>
+<h1>Macbook Air: More Power in the Same Lightweight Design!</h1>
+<br>
+<p>The new Macbook Air is here with a familiar case and upgraded specs. The upgraded processor, increased ram and faster M.2 storage provide a much needed boost in performance from last years model. It also offers an impressive 13 hours of batttery life during normal usage. The Macbook Air is available in Gold, Space Gray and Silver. The standard model includes 128GB of storage but it can be upgraded to 1TB. This years model comes highly recommended! </p>
+<br>
+<div class="row">
+  <div class="column">
+    <img src="images/office-1730939_1920.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Size comparison of Apple mouse, Macbook Air and iPhone">
+  </div>
+  <div class="column">
+    <img src="images/macbook-1001303_1920.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="View of the Macbook Air keyboard, touchpad, screen, logo and magnetic charger">
+  </div>
+  <div class="column">
+    <img src="images/keyboard-3542189_1920.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Closeup of the Macbook Air backlit keyboard">
+  </div>
+  <div class="column">
+    <img src="images/office-1734485_1920.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="Side view of a closed Macbook Air that shows the left side charging port, USB, and headphone jack">
+  </div>
+</div>
+<!-- The Lightbox Slides -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/office-1730939_1920.jpg" alt="Size comparison of Apple mouse, Macbook Air and iPhone">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/macbook-1001303_1920.jpg" alt="View of the Macbook Air keyboard, touchpad, screen, logo and magnetic charger">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/keyboard-3542189_1920.jpg" alt="Closeup of the Macbook Air backlit keyboard">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/office-1734485_1920.jpg" alt="Side view of a closed Macbook Air that shows the left side charging port, USB, and headphone jack">
+    </div>
+    <!-- Controls for the Modal / Lightbox -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    <!-- Thumbnail images for the Modal / Lightbox -->
+    <div class="column">
+      <img class="demo" src="images/office-1730939_1920.jpg" onclick="currentSlide(1)" alt="Size comparison of Apple mouse, Macbook Air and iPhone">
+    </div>
+    <div class="column">
+      <img class="demo" src="images/macbook-1001303_1920.jpg" onclick="currentSlide(2)" alt="View of the Macbook Air keyboard, touchpad, screen, logo and magnetic charger">
+    </div>
+    <div class="column">
+      <img class="demo" src="images/keyboard-3542189_1920.jpg" onclick="currentSlide(3)" alt="Closeup of the Macbook Air backlit keyboard">
+    </div>
+    <div class="column">
+      <img class="demo" src="images/office-1734485_1920.jpg" onclick="currentSlide(4)" alt="Side view of a closed Macbook Air that shows the left side charging port, USB, and headphone jack">
+    </div>
+  </div>
+</div>
+<script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</main>
+<footer>
+ Copyright &copy; 2025 CyberTruth <br>
+ <a href="mailto:cswisher@westga.edu">cswisher@westga.edu</a>
+</footer>
+</div>
+</body>
+</html>
